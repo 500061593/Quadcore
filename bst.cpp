@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//making struct pointer
 struct node{
 int data;
 node * left;
@@ -12,6 +13,7 @@ root->data=data;
 root->left=NULL;
 root->right=NULL;
 }
+//making function
 void pre(node * root,int data){
 if(root==NULL)
 return ;
@@ -31,7 +33,7 @@ if(root==NULL)
 return 0;
 post(root->left);
 post(root->right);
-cout<<root->data;
+cout<<root->data;//function for post traversal 
 }
 void insert(node * root,int data){
 if(root==NULL)
@@ -43,9 +45,9 @@ root->left=data;
 }
 int main(){
 struct node *root  = newNode(1);
-     root->left             = newNode(2);
-     root->right           = newNode(3);
-     root->left->left     = newNode(4);
+     root->left             = newNode(2);//inserting values
+     root->right           = newNode(3);//second value
+     root->left->left     = newNode(4);//third one
      root->left->right   = newNode(5);
 
     cout<<"preorder";
