@@ -149,7 +149,7 @@ k++;
 visit[v]=0; visited[v]=1;
 }
 }
-=======
+
 #include<new>
 #include<cstdlib>
 using namespace std ;
@@ -256,4 +256,3 @@ void dele ()
 return ;}
 
 
->>>>>>> 2d19beba8d52de1c1523162bd1bb844245f1e6cc
